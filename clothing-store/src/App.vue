@@ -23,7 +23,12 @@
   </div>
   <router-view />
   <div class = "footer">
-    <a href = "https://github.com/BYUCS260/Creative-Project-3"><img alt = "github" src = "../images/GitHub-Mark-Light-32px.png"></a>
+    <div class = "github">
+      <a href = "https://github.com/mckayqsnell/Creative-Project-3">Source</a>
+    </div>
+    <div class = "text">
+      <h6> By McKay Snell &amp; Thys Hansen</h6>
+    </div>
   </div>
 </div>
 </template>
@@ -96,20 +101,19 @@ body {
 
 .footer 
 {
-    margin-left:-100px !important;
-    position:fixed;
-    bottom:0;
-    width: 100%;
-    height: 60px;
-    background-color: #750101 !important;
+  margin-left:-100px !important;
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  height: 60px;
+  background-color: #750101 !important;
 }
 
-.footer img
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:50px;
-  padding: 7px 0;
+.github a {
+  text-decoration: none;
+  color:white;
+}
+.text {
+  color:white;
 }
 </style>
