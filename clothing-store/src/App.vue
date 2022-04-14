@@ -3,20 +3,21 @@
   <div id="menu">
     <div id="brand">
       <router-link to="/">
-        <img src="../images/logo_ccexpress.png">
+        <img src="../images/logo.jpeg">
+      <div class = "wussup">
+        <h2>McJokes</h2>
+      </div>
       </router-link>
     </div>
     <div id="side">
       <router-link to="/browse">
-        <div class="menu-item browse">
-          <img src="../images/globe.png">
-          <p>Browse</p>
+        <div class="menu-item browse"> 
+          <p>About</p>
         </div>
       </router-link>
       <router-link to="/cart">
         <div class="menu-item">
-          <img src="../images/love.png">
-          <p>{{cartCount}} items</p>
+          <p>Favorites</p>
         </div>
       </router-link>
     </div>
@@ -37,9 +38,6 @@
 export default {
   name: 'App',
   computed: {
-    cartCount() {
-      return this.$root.$data.cart.length;
-    },
   },
 };
 </script>
@@ -51,7 +49,7 @@ export default {
 
 body {
   margin: 50px 100px;
-  background: rgb(71, 59, 59);
+  background: rgb(0, 0, 0);
 }
 
 #menu {
@@ -66,24 +64,32 @@ body {
   color: #e23737;
 }
 
-#brand {
-  grid-area: brand;
-  display: flex;
-  justify-content: center;
-}
-
 #brand img {
-  height: 200px;
+  height: 150px;
 }
 
 #side {
   grid-area: side;
   display: flex;
   justify-content: flex-end;
+  font-size: 30px;
+  text-decoration: none
 }
 
-#side img {
-  width: 50px;
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .menu-item {
@@ -115,5 +121,9 @@ body {
 }
 .text {
   color:white;
+}
+
+.wussup{
+  color:#8e1919
 }
 </style>

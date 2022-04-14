@@ -6,20 +6,13 @@
         v-for="(product, index) in cartItems"
         :key="`product-${index}`"
       >
-        <div class="image">
-          <img :src="'/images/adidas/' + product.image" />
-        </div>
         <div class="info">{{ product.name }}</div>
-        <div class="price">{{ product.price }}</div>
-        <div class="action">
-          <button class="auto" v-on:click="removeFromCart(index)">
-            Remove item
-          </button>
-        </div>
+        <div class="color">{{product.color}}</div>
+        <div class="price">-{{ product.price }}</div>
       </div>
     </div>
     <div v-else>
-      You don't have any items in your cart.
+      You don't have any Favorites
     </div>
   </div>
 </template>
@@ -54,32 +47,23 @@ export default {
 </script>
 
 <style scoped>
-.product 
+.product{
+  padding: 20px;
+  background-color: #750101;
+  margin: 5px;
+}
+.info
 {
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-auto-rows: minmax(50px, auto);
-  border: solid black;
-  padding: 8px;
-  margin: 15px;
-  border-radius: 20px;
-  background:black;
-  color:white;
+  font-size: 30px;
 }
 
-.product img 
-{
-  height: 100px;
+.price{
+  font-style: italic;
+  padding-top: 1%;
 }
 
-.info 
-{
-  font-weight: bolder;
-  color: white;
-}
-
-button {
-  color:white;
-  background:black;
+.color {
+    padding-top: .5%;
+    font-size: 20px;
 }
 </style>

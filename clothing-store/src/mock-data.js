@@ -1,86 +1,74 @@
 let mock = [{
     id: 1,
-    name: "Shoe 1",
-    price: "$5.62",
-    color: "Gray & White",
-    image: '8031041.373638.jpg'
+    name: "Joke 1",
+    price: "Brian Regan",
+    color: "Why don't pirates take a shower before they walk the plank? -They just wash up on shore",
   },
   {
     id: 2,
-    name: "Shoe 2",
-    price: "$2.41",
-    color: "Gray & White",
-    image: 'WhiteShoe.jpg'
+    name: "Joke 2",
+    price: "Thys Hansen",
+    color: "One of the oddities of Wall Street is that it is the dealer and not the customer who is called broker",
   },
   {
       id: 3,
-      name: "your mom's Shoe",
-      price: "$23",
-      color: "Black",
-      image: '7142646.151.jpg'
+      name: "Joke 3",
+      price: "Mckay Snell",
+      color: "I invented a new word! Plagiarism!",
   },
   {
     id: 4,
-    name: "Cool Shoe",
-    price: "$5.62",
-    color: "Other Colors",
-    image: '7431637.351657.jpg'
+    name: "Joke 4",
+    price: "Thys Hansen",
+    color: "I saw a guy drop his scrabble letters on the road. I asked him what's the word on the street?",
   },
   {
     id: 5,
-    name: "Even Cooler Shoe",
-    price: "$2.41",
-    color: "Black",
-    image: '7431637.220611.jpg'
+    name: "Joke 5",
+    price: "Brian Regan",
+    color: "Did you hear about the actor falling through the floorboards? He was going through a stage",
   },
   {
     id: 6,
-    name: "Mega Cool Shoe",
-    price: "$25.00",
-    color: "Red",
-    image: '7932846.67610.jpg'
+    name: "Joke 6",
+    price: "Mckay Snell",
+    color: "Did you hear of the claustrophobic astronaut? He needed some space",
   },
   {
     id: 7,
-    name: "Amazing Shoe",
-    price: "$70.00",
-    color: "Other Colors",
-    image: '7932846.239636.jpg'
+    name: "Joke 7",
+    price: "Thys Hansen",
+    color: "You can't trust atoms- they make up everything",
   },
   {
     id: 8,
-    name: "Fantastic Shoe",
-    price: "$1,000,000",
-    color: "Black",
-    image: '7431637.3.jpg'
+    name: "Joke 8",
+    price: "Brian Regan",
+    color: "A day without sunshine is well, night",
   },
   {
     id: 9,
-    name: "Incredible Shoe",
-    price: "$600.00",
-    color: "Black",
-    image: '7976215.220694.jpg'
+    name: "Joke 9",
+    price: "Mckay Snell",
+    color: "Where are average things manufactured? The satisfactory",
   },
   {
     id: 10,
-    name: "Astonishing Shoe",
-    price: "$900.00",
-    color: "Gray & White",
-    image: '7976215.373586.jpg'
+    name: "Joke 10",
+    price: "Thys Hansen",
+    color: "How do you drown a hipster? Throw him in the mainstream",
   },
   {
     id: 11,
-    name: "Splendid Shoe",
-    price: "$300.00",
-    color: "Other Colors",
-    image: '7976296.354101.jpg'
+    name: "Joke 11",
+    price: "Brian Regan",
+    color: "What sits at the bottom of the sea and twitches? A nervous wreck",
   },
   {
     id: 12,
-    name: "Just a Shoe",
-    price: "$1.00",
-    color: "Gray & White",
-    image: '7976270.97986.jpg'
+    name: "Joke 12",
+    price: "Thys Hansen",
+    color: "What does a nosy pepper do? Gets jalapeno business",
   },
 ]
 

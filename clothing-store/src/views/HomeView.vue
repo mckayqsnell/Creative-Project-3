@@ -1,12 +1,5 @@
 <template>
-<div>
-  <div class="wrapper">
-    <div class="search">
-      <form class="pure-form">
-        <i class="fas fa-search"></i><input v-model="searchText" />
-      </form>
-    </div>
-  </div>
+  <div>
   <ProductList :products="products" />
 </div>
 </template>
@@ -21,29 +14,17 @@ export default {
   data() {
     return {
       searchText: '',
-    }
+    } 
   },
   computed: {
     products() {
-      return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+      return this.$root.$data.products.filter(product => product.price.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
     }
   },
 }
 </script>
 
 <style scoped>
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 50%;
-  background:white;
-}
 
 form {
   display: table;
@@ -52,7 +33,7 @@ form {
 
 i {
   display: table-cell;
-  padding-left: 10px;
+  padding-left: 100px;
   width: 1px;
 }
 
@@ -62,6 +43,6 @@ input {
   border: none !important;
   box-shadow: none !important;
   width: 100%;
-  height: 40px;
+  height: 400px;
 }
 </style>
